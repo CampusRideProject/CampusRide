@@ -22,21 +22,7 @@ public class Scooter extends Vehicle implements Electric {
         batteryLevel = Math.min(100, batteryLevel + amount);
     }
 
-    @Override
-    public double calculatePrice(int minutes) {
-        validateMinutes(minutes);
-        double price = 1.00;
-
-        if (minutes <= 30) {
-            price += minutes * 0.15;
-        } else {
-            price += 30 * 0.15;
-            int extraMinutes = minutes - 30;
-            price += extraMinutes * 0.20;
-        }
-
-        return price;
-    }
+    @Override public double calculatePrice(int minutes) { validateMinutes(minutes); double price = 1.00; if (minutes <= 30) { price += minutes * 0.15; } else { price += 30 * 0.15; int extraMinutes = minutes - 30; price += extraMinutes * 0.20; } return price; }
 
     private void validateBattery(int batteryLevel) {
         if (batteryLevel < 0 || batteryLevel > 100) {

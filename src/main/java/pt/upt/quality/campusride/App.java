@@ -21,3 +21,4 @@ public class App {
                 fleet.findById("S10").calculatePrice(40));
     }
 }
+
