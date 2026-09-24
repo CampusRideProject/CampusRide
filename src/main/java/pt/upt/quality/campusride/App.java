@@ -1,4 +1,4 @@
-package pt.upt.quality.campusride;
+﻿package pt.upt.quality.campusride;
 
 public class App {
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class App {
 
         System.out.println("=== CampusRide ===");
         fleet.getVehicles().forEach(System.out::println);
+        System.out.println("Number of Available vehicle = " + report.countAvailableVehicles());
         runTeamFeatures(fleet, rentalService, report);
     }
 
