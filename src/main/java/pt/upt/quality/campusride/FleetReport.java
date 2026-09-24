@@ -31,4 +31,14 @@ public class FleetReport {
 
         return total;
     }
+
+    public int countAvailableVehicles() {
+    int count = 0;
+    for (Vehicle vehicle : fleet.getVehicles()) {
+        if (vehicle.isAvailable()) {
+            count++;
+        }
+    }
+    return count;
+}
 }
