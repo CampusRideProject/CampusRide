@@ -1,4 +1,3 @@
-```java
 package pt.upt.quality.campusride;
 
 import java.util.ArrayList;
@@ -33,4 +32,3 @@ public class FleetReport {
         return total;
     }
 }
-```
